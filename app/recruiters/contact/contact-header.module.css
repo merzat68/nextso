@@ -1,0 +1,11 @@
+.ContactPageHeader {
+  @apply flex flex-col p-12 gap-8;
+
+  .ContactPageHeaderText {
+    @apply text-[#A69EA2] text-6xl font-bold;
+
+    .ContactPageHeaderStrong {
+      @apply text-soDigital-grey-700;
+    }
+  }
+}

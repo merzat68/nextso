@@ -1,0 +1,135 @@
+.menu-container {
+  @apply flex fixed z-30 min-w-[100vw] min-h-[100vh] bg-[#efeeef] top-0 left-0 right-0 bottom-0;
+}
+
+.menu-container-3D {
+  @apply self-center;
+}
+
+.content-wrapper {
+  @apply flex flex-col justify-between py-8 px-12 flex-grow bg-white;
+}
+
+.content-wrapper-header {
+  @apply flex justify-between items-center;
+}
+
+.language-box {
+  @apply bg-[#efeeef] py-2 px-3 rounded-lg;
+}
+
+.language-text {
+  color: #1b1819;
+  font-size: 15px;
+  font-family: "Basis Grotesque Pro", sans-serif;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+}
+
+.menu-items {
+  @apply flex gap-2;
+}
+
+.menu-item {
+  @apply flex items-center gap-1 p-2 rounded-lg;
+
+  p {
+    @apply text-soDigital-grey-700 text-[15px] font-medium;
+  }
+
+  &.solutions {
+    background-color: #edd5ff;
+  }
+
+  &.recruiting {
+    background-color: #bdffc2;
+  }
+
+  &.close {
+    @apply flex flex-col items-center justify-center gap-1 bg-black p-3 rounded-md min-h-full cursor-pointer;
+  }
+}
+
+.content-wrapper-main {
+  @apply flex;
+}
+
+.content-wrapper-main-links {
+  @apply flex flex-col justify-between gap-20 w-1/2;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 40px;
+  font-family: "Basis Grotesque Pro", sans-serif;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+.main-menu-links {
+  display: flex;
+  flex-direction: column;
+  opacity: 0.7;
+}
+
+.job,
+.contact {
+  color: #3a3538;
+  font-size: 1.25rem;
+}
+
+.content-wrapper-main-info {
+  @apply flex flex-col gap-10 w-1/2;
+}
+
+.info-block {
+  @apply flex flex-col gap-3;
+}
+
+.info-title {
+  color: #5d5659;
+  font-size: 1rem;
+}
+
+.info-content {
+  color: #3a3538;
+  font-size: 1.25rem;
+  opacity: 0.7;
+}
+
+.content-wrapper-footer {
+  @apply flex justify-between;
+}
+
+.social-buttons {
+  @apply flex items-center gap-2;
+}
+
+.social-icon {
+  @apply relative h-fit;
+
+  span {
+    @apply block p-6 bg-[#EFEEEF] rounded-lg;
+  }
+}
+
+.learn-more {
+  @apply flex items-center gap-14;
+}
+
+.learn-more-text {
+  @apply flex py-1 text-[#1b1819] text-base;
+}
+
+.learn-more-button {
+  @apply flex items-center gap-3 min-h-full p-3 bg-[#1b1819] rounded-lg;
+}
+
+.button-text {
+  @apply text-white text-base;
+}

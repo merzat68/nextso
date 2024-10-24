@@ -1,0 +1,7 @@
+.contactPageContent {
+  @apply flex flex-col gap-32 pb-24;
+}
+
+.contactPageContentForm {
+  @apply px-36;
+}

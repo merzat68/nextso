@@ -1,0 +1,110 @@
+.form-container {
+  @apply grid grid-cols-12 grid-rows-2 w-full h-full p-12 bg-[#EFEEEF] rounded-lg gap-12;
+
+  .form-container-calendar {
+    @apply flex flex-col items-center justify-center gap-8 row-span-1 col-span-5 bg-white py-6 px-24 rounded-lg;
+
+    h5 {
+      @apply text-soDigital-grey-600 text-center text-xl font-bold leading-[140%];
+    }
+
+    .form-container-calendar-btn {
+      @apply flex items-center gap-3 rounded-lg bg-soDigital-grey-700 p-3;
+
+      p {
+        @apply text-white text-center text-base font-medium leading-[150%];
+      }
+    }
+  }
+
+  .form-container-contact {
+    @apply flex flex-col justify-between gap-2 row-span-1 row-start-2 col-span-5;
+
+    .form-container-contact-item {
+      @apply flex flex-col gap-1 bg-white p-6 rounded-lg;
+
+      h6 {
+        @apply text-[#82787D] text-sm font-normal;
+      }
+
+      p {
+        @apply line-clamp-1 text-soDigital-grey-600 text-base font-normal leading-[150%];
+      }
+    }
+  }
+
+  .form-container-input {
+    @apply flex flex-col gap-10 p-12 rounded-lg bg-white col-span-7 row-span-2;
+
+    .form-container-input-header {
+      h5 {
+        @apply text-soDigital-grey-700 text-2xl font-bold leading-[117%];
+      }
+    }
+
+    .form-container-input-body {
+      @apply flex flex-col gap-8;
+
+      input,
+      textarea,
+      select {
+        @apply rounded-md bg-soDigital-grey-50 px-3 py-2 outline-0 w-full;
+
+        &::placeholder {
+          @apply text-soDigital-grey-300 text-base font-normal leading-[150%];
+        }
+      }
+
+      .form-container-input-group {
+        @apply flex items-start gap-3;
+
+        p {
+          @apply text-soDigital-grey-500 text-xs font-medium;
+        }
+
+        select {
+          @apply text-soDigital-grey-300 text-base font-normal leading-[150%];
+
+          option {
+            @apply text-soDigital-grey-700;
+          }
+        }
+
+        .form-container-input-check {
+          input {
+            @apply opacity-0 z-10 absolute w-5 h-5 cursor-pointer rounded-md;
+          }
+
+          span {
+            @apply relative block w-5 h-5 bg-white rounded-[4px];
+            border: 1px solid #1b1819;
+            transition: background-color 0.2s, border-color 0.2s;
+          }
+
+          span::after {
+            @apply absolute top-0 left-0 right-0 bottom-0 m-auto w-[6px] h-3 opacity-0 rotate-45;
+            content: "";
+            border: solid #1b1819;
+            border-width: 0 2px 2px 0;
+            transition: opacity 0.2s;
+          }
+
+          input:checked + span {
+            @apply border-0 bg-[#C8FFCC];
+          }
+
+          input:checked + span::after {
+            @apply opacity-100;
+          }
+        }
+      }
+    }
+
+    .form-container-input-footer {
+      button {
+        @apply flex justify-center items-center rounded-lg bg-soDigital-grey-700 py-2 px-4;
+        @apply text-white text-center text-base font-medium;
+      }
+    }
+  }
+}

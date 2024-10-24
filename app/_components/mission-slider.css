@@ -1,0 +1,69 @@
+.mission-slider {
+  @apply flex items-center justify-center overflow-hidden relative w-full h-[1100px];
+  perspective: 1000px; /* Adds depth to the scene */
+
+  .slide {
+    @apply flex w-auto cursor-pointer py-16 px-12 opacity-0 absolute h-[640px] rounded-lg;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+  }
+
+  .slide-image {
+    @apply w-1/2;
+
+    img {
+      @apply w-1/2 h-full object-cover object-top;
+    }
+  }
+
+  .slide-content {
+    @apply flex flex-col relative w-1/2;
+
+    .slide-content-title {
+      @apply flex gap-12 justify-between h-1/2;
+
+      h2 {
+        @apply text-soDigital-grey-700 text-[40px] font-bold leading-[120%] flex-grow text-left;
+      }
+
+      h3 {
+        @apply text-soDigital-grey-200 text-[40px] font-bold leading-[120%];
+      }
+    }
+
+    .slide-content-description {
+      @apply flex flex-col justify-between gap-4 h-1/2;
+
+      p {
+        @apply w-1/2 text-left text-soDigital-grey-700;
+
+        &:first-child {
+          @apply text-xl font-medium leading-[140%];
+        }
+
+        &:last-child {
+          @apply text-base font-normal flex-grow leading-[150%];
+        }
+      }
+    }
+  }
+
+  .active {
+    @apply w-[1248px] scale-100 opacity-100 z-[3];
+    transform: translateZ(0);
+  }
+
+  .second {
+    @apply bottom-[184px] w-[1186px] left-auto right-auto opacity-100 z-[2];
+    transform: translateZ(-50px) translateY(-200px); /* Second slide is 152px higher */
+  }
+
+  .third {
+    @apply w-[1123px] top-0 opacity-100 z-[1];
+    transform: translateZ(-100px) translateY(-50px); /* Third slide is 128px higher than the second (152px + 128px) */
+  }
+
+  .hidden {
+    @apply opacity-0 z-0;
+    transform: translateZ(0) scale(0.4);
+  }
+}

@@ -1,0 +1,15 @@
+.missions {
+  @apply flex flex-col gap-32;
+
+  .missionsTitle {
+    @apply flex flex-col items-center gap-8 px-48;
+
+    .missionsTitleHeader {
+      @apply text-soDigital-grey-700 text-[80px] font-bold;
+    }
+
+    .missionsTitleText {
+      @apply w-[576px] text-soDigital-grey-600 text-center text-xl font-normal leading-[140%];
+    }
+  }
+}

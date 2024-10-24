@@ -1,0 +1,31 @@
+.slider-container {
+  @apply flex p-12 w-full gap-12 rounded-2xl border border-soDigital-grey-100 bg-white border-solid;
+}
+.slides {
+  @apply flex flex-col justify-between py-4 gap-8 w-1/4 flex-grow;
+}
+.slide {
+  @apply flex flex-col gap-2 pl-12 pr-6 py-1 relative cursor-pointer;
+
+  .slide-title {
+    @apply text-soDigital-grey-700  text-2xl font-bold leading-[117%] break-words;
+  }
+  .slide-content {
+    @apply text-soDigital-grey-700 text-left text-base font-normal leading-[150%];
+  }
+}
+
+.progress {
+  @apply absolute w-[3px] h-full top-0 left-0 rounded-lg bg-soDigital-green-100 overflow-hidden;
+
+  .progress-bar {
+    @apply w-full bg-soDigital-green-300 h-0 absolute rounded-lg;
+  }
+}
+.slide-image {
+  @apply flex items-center h-auto w-[672px] min-h-[448px] overflow-hidden;
+
+  img {
+    @apply w-full h-auto rounded-lg;
+  }
+}
