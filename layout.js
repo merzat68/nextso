@@ -1,6 +1,6 @@
 import TransparentBox from "@/app/_components/3DElement";
 import Header from "@/app/_components/Header";
-import "@/app/_styles/globals.css";
+import "@/app/_styles/globals.scss";
 import Footer from "./_components/Footer";
 
 export const metadata = {

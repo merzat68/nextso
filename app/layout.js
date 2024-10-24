@@ -1,4 +1,4 @@
-import "@/app/_styles/globals.css";
+import "@/app/_styles/globals.scss";
 
 export const metadata = {
   title: {

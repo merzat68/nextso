@@ -4,7 +4,7 @@ import { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import arrow from "@/public/projects-icon.png";
-import "./videos.css";
+import "./videos.scss";
 
 export default function Videos() {
   const activeButtonRef = useRef(null);

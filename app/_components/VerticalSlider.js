@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 
-import "@/app/_components/vertical-slider.css";
+import "@/app/_components/vertical-slider.scss";
 
 export default function VerticalSlider({ slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);

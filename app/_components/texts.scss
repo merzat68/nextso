@@ -1,0 +1,11 @@
+.texts-container {
+  @apply px-48 py-32;
+
+  h1 {
+    @apply text-[#1B1819] text-[40px] font-bold leading-[120%];
+  }
+
+  strong {
+    @apply text-[#A69EA2] text-[40px] font-bold;
+  }
+}

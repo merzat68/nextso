@@ -7,7 +7,7 @@ import { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import "@/app/_components/team.css";
+import "@/app/_components/team.scss";
 import Title from "./Title";
 
 export default function Team({ teams }) {

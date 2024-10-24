@@ -3,7 +3,7 @@
 import React from "react";
 import Title from "@/app/_components/Title";
 import Image from "next/image";
-import "@/app/_components/contact-action.css";
+import "@/app/_components/contact-action.scss";
 
 export default function ContactAction({ page, image }) {
   return (

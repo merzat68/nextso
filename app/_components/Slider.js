@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import "./slider.css"; // Custom styles for play button overlay and Swiper styling
+import "./slider.scss"; // Custom styles for play button overlay and Swiper styling
 
 const SliderComponent = () => {
   return (

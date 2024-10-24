@@ -1,0 +1,75 @@
+.contact-action-container {
+  @apply flex px-36 justify-start items-center gap-[194px];
+}
+
+.rotated-box {
+  @apply absolute origin-center rotate-[-4deg] bg-neutral-100 rounded-3xl overflow-hidden z-10;
+}
+
+.placeholder-image {
+  @apply absolute;
+}
+
+.text-overlay {
+  @apply absolute flex flex-col justify-end items-center gap-4 bottom-8 left-6 right-6;
+}
+
+.highlight-box {
+  @apply px-6 py-8 rounded-lg flex justify-center items-center w-full;
+}
+
+.highlight-text {
+  @apply text-center text-[#1b1819] text-xl font-medium leading-7;
+}
+
+.subtitle {
+  @apply px-2 py-1 bg-[#3a3538] flex justify-center items-center;
+}
+
+.subtitle-text {
+  @apply text-white text-base font-normal leading-normal;
+}
+
+.bordered-box {
+  @apply min-w-[480px] h-[854px] relative;
+}
+
+.contact-info {
+  @apply flex flex-col justify-start items-start gap-8;
+}
+
+.contact-box {
+  @apply pl-2 pr-3 py-1.5 bg-[#3a3538] rounded-lg flex justify-center items-center gap-2;
+}
+
+.headline {
+  @apply text-[#1b1819] text-[80px] font-bold leading-[84px];
+}
+
+.support-section {
+  @apply flex flex-col justify-start items-start gap-12;
+}
+
+.support-text {
+  @apply text-[#3a3538] text-xl font-normal leading-7;
+}
+
+.contact-actions {
+  @apply flex justify-start items-start gap-2;
+}
+
+.call-to-action {
+  @apply p-3 bg-[#1b1819] rounded-lg flex justify-center items-center;
+}
+
+.action-text {
+  @apply text-center text-white text-base font-medium leading-normal;
+}
+
+.contact-form {
+  @apply p-3 bg-[#efeeef] rounded-lg flex justify-center items-center;
+}
+
+.form-text {
+  @apply text-center text-[#1b1819] text-base font-medium leading-normal;
+}

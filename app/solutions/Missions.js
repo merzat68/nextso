@@ -2,7 +2,7 @@
 
 import Title from "@/app/_components/Title";
 import VerticalCardSlider from "@/app/_components/MissionSlider";
-import styles from "./mission.module.css";
+import styles from "./mission.module.scss";
 
 export default function Missions() {
   return (

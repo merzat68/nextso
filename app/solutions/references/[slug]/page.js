@@ -9,11 +9,9 @@ const posts = {
 };
 
 export default function PostPage({ params }) {
-  console.log(params); // Debugging
   const { slug } = params; // Get the slug from URL params
 
   const post = posts[slug];
-  console.log(params);
 
   // If the post is not found, return a 404 page
   if (!post) {

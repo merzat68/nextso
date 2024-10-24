@@ -1,0 +1,68 @@
+.curved-carousel {
+  position: absolute;
+  left: calc(50% - 150px);
+  top: 0;
+  transform-origin: 150px 2500px;
+  will-change: transform;
+
+  .curved-carousel-item {
+    position: absolute;
+    height: 100%;
+    transform-origin: 150px 2500px;
+
+    &:active {
+      cursor: grabbing;
+    }
+
+    .curved-carousel-item-wrap {
+      width: 288px;
+      height: 370px;
+
+      .social-box {
+        @apply flex flex-col w-full h-full bg-white shadow-[0px_12px_24px_0px_rgba(0,0,0,0.10)] rounded-md;
+
+        .social-box-header {
+          @apply flex items-center justify-between p-2;
+
+          .social-box-header-wrap {
+            @apply flex items-center gap-2;
+          }
+
+          .social-box-header-icon {
+            @apply w-6 h-6 border-[#F2F2F2] border-[0.686px] border-solid bg-[#BDFFC2] rounded-full relative;
+
+            img {
+              @apply absolute top-0 left-0 right-0 bottom-0 m-auto;
+            }
+          }
+
+          .social-box-header-title {
+            p {
+              @apply text-soDigital-grey-600 text-xs font-bold leading-4;
+            }
+          }
+
+          .social-box-header-more {
+            @apply flex items-center gap-[2px];
+
+            span {
+              @apply block w-[2px] h-[2px] rounded-full bg-black;
+            }
+          }
+        }
+
+        .social-box-content {
+          @apply w-[288px] h-[288px];
+        }
+
+        .social-box-footer {
+          @apply flex items-center py-3 px-2 justify-between;
+
+          .social-box-footer-action {
+            @apply flex items-center gap-3;
+          }
+        }
+      }
+    }
+  }
+}

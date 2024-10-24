@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import "./contact-form.css";
+import "./contact-form.scss";
 import Image from "next/image";
 import Link from "next/link";
 

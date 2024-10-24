@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import "./main-menu.css";
+import "./main-menu.scss";
 import TransparentBox from "./3DElement";
 
 import calendar from "@/public/calendar.svg";

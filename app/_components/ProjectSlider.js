@@ -6,7 +6,7 @@ import "swiper/css";
 import { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import "@/app/_components/project-slider.css";
+import "@/app/_components/project-slider.scss";
 
 const ProjectSlider = ({ items }) => {
   const swiperRef = useRef(null);

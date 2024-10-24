@@ -1,6 +1,6 @@
 "use client";
 
-import "./texts.css";
+import "./texts.scss";
 export default function Texts({ text }) {
   return (
     <div className="texts-container">

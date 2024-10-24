@@ -6,7 +6,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import { useGSAP } from "@gsap/react";
-import "./web-development.css";
+import "./web-development.scss";
 
 gsap.registerPlugin(ScrollToPlugin);
 

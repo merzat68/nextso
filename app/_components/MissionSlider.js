@@ -1,6 +1,6 @@
 "use client";
 
-import "./mission-slider.css";
+import "./mission-slider.scss";
 import { useState } from "react";
 import Image from "next/image";
 

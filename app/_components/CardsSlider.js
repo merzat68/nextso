@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import "./cards-slider.css";
+import "./cards-slider.scss";
 import { usePathname } from "next/navigation";
 
 export default function CardsSlider({ slides }) {

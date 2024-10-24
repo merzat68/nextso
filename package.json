@@ -25,6 +25,7 @@
     "react-fast-marquee": "^1.6.5",
     "react-slick": "^0.30.2",
     "sanity": "^3.61.0",
+    "sass": "^1.80.4",
     "slick-carousel": "^1.8.1",
     "sodigital": "file:",
     "swiper": "^11.1.14",

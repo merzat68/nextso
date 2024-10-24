@@ -1,7 +1,7 @@
 "use client";
 
 import Title from "@/app/_components/Title";
-import styles from "./contact-header.module.css";
+import styles from "./contact-header.module.scss";
 
 export default function ContactPageHeader() {
   return (

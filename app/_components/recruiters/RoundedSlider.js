@@ -13,7 +13,7 @@ import like from "@/public/like.png";
 import comment from "@/public/comment.png";
 import send from "@/public/send.png";
 import bookmark from "@/public/bookmark.png";
-import "./CircularCarousel.css";
+import "./CircularCarousel.scss";
 
 const CircularCarousel = () => {
   gsap.registerPlugin(Draggable, InertiaPlugin);
